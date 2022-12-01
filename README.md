@@ -20,12 +20,20 @@ The process starts with a phone call from the patient to the secretary of the re
 
 ### <ins>To-Be Process</ins>
 
-To schedule an appointment, the user has to first enter some personal information into a google form such as Name, Email, Mobile, AHV-Number and the reasaon for the appointment. Afterwards the decision engine will decide between three options - remote appointment, physical appointment or the patient will be sent to the emergency.
+To schedule an appointment, the user has to first enter some personal information into a google form such as Name, Email, Mobile, AHV-Number and the reasaon for the appointment. Afterwards the decision engine will decide between three options upon which reason was given - remote appointment, physical appointment or the patient will be sent to the emergency.
 
-<ins>Remote and physical appointment:</ins>
+<ins>Remote appointment:</ins>
 
+If the reason was OP discussion.
+
+<ins>Physical appointment:</ins>
+
+
+If the reason was sickness
 
 <ins>Emergency:</ins>
+
+injury
 
 
 
