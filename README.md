@@ -41,4 +41,11 @@ The emergency appointments are the "injury" related ones. When injury is selecte
 The solution is composed of a combination of a workflow engine solution (Camunda) and connected external services that support different activities within the process and collates the appointment data. 
 
 
+<ins>Components</ins>
+Camunda Workflow: 
+The process flow has been created and implemented with Camunda Platform v7.17 using BPMN and DMN. 
 
+MAKE/Integromat Services: 
+
+
+Calendly: 
