@@ -29,11 +29,11 @@ If the reason was OP discussion a remote appointment is proposed to the patient.
 
 <ins>Physical appointment:</ins>
 
-If the reason was sickness, a physical appointment is proposed to the patient. An email with detailed instructions about the appointment is sent to 
+If the reason was sickness, a physical appointment is proposed to the patient. An email with detailed instructions about the appointment is sent to the patient. 
 
 <ins>Emergency:</ins>
 
-The emergency appointments are the "injury" related ones. When injury is selected as reason, an emergency appointment is proposed and the instructions to seek emergency is sent out by email. 
+The emergency appointments are the "injury" related ones. When injury is selected as reason, an emergency appointment is proposed and the instructions to seek emergency is sent out to the patient´s email. 
 
 
 ### <ins>Implementation</ins>
