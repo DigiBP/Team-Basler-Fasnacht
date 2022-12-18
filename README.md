@@ -36,4 +36,9 @@ If the reason was sickness, a physical appointment is proposed to the patient. A
 injury
 
 
+### <ins>Implementation</ins>
+
+The solution is composed of a combination of a workflow engine solution (Camunda) and connected external services that support different activities within the process and collates the appointment data. 
+
+
 
