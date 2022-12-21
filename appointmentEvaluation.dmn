@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="appointmentEvaluation" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.3.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.17.0">
+  <decision id="appointment" name="Appointment Evaluation">
+    <decisionTable id="DecisionTable_1jricg7">
+      <input id="Input_1" label="reason">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>reason</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1vm4tef" label="daysduration">
+        <inputExpression id="LiteralExpression_0a9xswl" typeRef="integer">
+          <text>daysduration</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0prcb9n" label="painlevel">
+        <inputExpression id="LiteralExpression_0559rlg" typeRef="integer">
+          <text>painlevel</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="output" name="output" typeRef="string" />
+      <rule id="DecisionRule_0rc2og3">
+        <inputEntry id="UnaryTests_0hrf1d2">
+          <text>"Injury"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0dhyzth">
+          <text>&gt;=4</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_09p5zz4">
+          <text>&gt;=7</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0uwroht">
+          <text>"Emergency"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_03y6fou">
+        <inputEntry id="UnaryTests_02e7aci">
+          <text>"Pre-OP Consultation"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0f67aiv">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_01hg05r">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1e1l7w0">
+          <text>"Remote"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0iwuqpm">
+        <inputEntry id="UnaryTests_137vron">
+          <text>"Sickness"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0vp9yco">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0n691ee">
+          <text>&lt;5</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1o232ig">
+          <text>"Remote"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0h7jrr0">
+        <inputEntry id="UnaryTests_0ycc66j">
+          <text>"Injury"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ez5r7e">
+          <text>&lt;4</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1tncux9">
+          <text>[4..6]</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1bhlaii">
+          <text>"Physical"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0hocp51">
+        <inputEntry id="UnaryTests_0zd8c0f">
+          <text>"Injury"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_19vq16y">
+          <text>&lt;4</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1t688jz">
+          <text>[1..4]</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1127sc5">
+          <text>"Remote"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_01cpd2x">
+        <inputEntry id="UnaryTests_18ucx1w">
+          <text>"Sickness"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0aufgqa">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0lfbmeh">
+          <text>&gt;=5</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1vp0o2p">
+          <text>"Physical"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="appointment">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
