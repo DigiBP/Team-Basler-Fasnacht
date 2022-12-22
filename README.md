@@ -44,6 +44,10 @@ Camunda Workflow:
 The process flow has been created and implemented with Camunda Platform v7.17 using BPMN and DMN. 
 
 MAKE/Integromat Services: 
+Sendinblue for Dynamic email notifications
+Webhooks (connected to Camunda process instance)
+HTTP Requests (connected to Camunda process instance)
+Google Forms with Form Validation , for registration data
+Calendy Service for Appointment Scheduling
 
 
-Calendly: 
