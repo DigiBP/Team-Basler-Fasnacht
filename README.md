@@ -1,5 +1,7 @@
 # Team-Basler-Fasnacht
 
+Running Instance: https://digibp.herokuapp.com/camunda/app/cockpit/default/#/process-instance/13538ca8-81f0-11ed-8aab-02e6d673d01e/runtime?viewbox=%7B%22Definitions_19zpc11%22:%7B%22x%22:-625.0196629213484,%22y%22:73.98033707865169,%22width%22:2769.6629213483147,%22height%22:811.7977528089888%7D%7D&searchQuery=%5B%5D
+
 ## Patient Appointment Scheduling Process - Digitalisation of Business Process - FHNW
 
 Our group has decided to model and enhance a Bachelor Thesis of one team member. The thesis focuses on appointment scheduling tools especially in heathcare. At current state, most of hospitals and medical clinics are using phone as a medium to schedule, re-schedule or cancel appointments. This is perceived as an expense that can be eliminated through digitalization.
