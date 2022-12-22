@@ -4,13 +4,6 @@
 
 Our group has decided to model and enhance a Bachelor Thesis of one team member. The thesis focuses on appointment scheduling tools especially in heathcare. At current state, most of hospitals and medical clinics are using phone as a medium to schedule, re-schedule or cancel appointments. This is perceived as an expense that can be eliminated through digitalization.
 
-Our project considers two two scenarios:
-
-- create an appointment
-- prepare for the first consultation
-
-According to our researches, in most _____ any statistics about medium? How many over phone? What age group?
-
 
 ### <ins>As-Is Process</ins>
 
@@ -25,16 +18,21 @@ Within the appointment process, underlying user/business tasks are performed as 
 
 <ins>Remote appointment:</ins>
 
-If the reason was OP discussion a remote appointment is proposed to the patient. A link with further instructions is sent by email upon registration. 
+If the reason is "PRE-OP CONSULTATION" a remote appointment is proposed to the patient. A link with further instructions is sent by email upon registration. 
+
+If the selected reason is "SICKNESS" but the PAIN LEVEL is < 5 the DMN is advising a remote appointment.
+
+If selected reason is "Injury" but the PAIN LEVEL is between 1 and 4 and the DAYS DURATION is < 4, the DMN recommends a remote appointment.
 
 <ins>Physical appointment:</ins>
 
-If the reason was sickness, a physical appointment is proposed to the patient. An email with detailed instructions about the appointment is sent to the patient. 
+If the reason was "SICKNESS" and the PAIN LEVEL is >= 5 the DMN suggests a physical appointment to the patient. An email with detailed instructions about the appointment is sent to the patient. 
+
+If selected reason is "Injury" but the PAIN LEVEL is between 4 and 6 and the DAYS DURATION is < 4, the DMN recommends a physical appointment.
 
 <ins>Emergency:</ins>
 
-The emergency appointments are the "injury" related ones. When injury is selected as reason, an emergency appointment is proposed and the instructions to seek emergency is sent out to the patient´s email. 
-
+For an emergency advice, the input values for DMN must be "Injury" as reason, >= 7 PAIN LEVEL and >=4 DAYS DURATION.
 
 ### <ins>Implementation</ins>
 
